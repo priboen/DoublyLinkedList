@@ -13,6 +13,14 @@ namespace DoublyLinkedList
         public Node next;
         public Node prev;
     }
+    class DoubleLinkedList
+    {
+        Node START;
+        public DoubleLinkedList()
+        {
+            START = null;
+        }
+    }
     class Program
     {
         static void Main(string[] args)
