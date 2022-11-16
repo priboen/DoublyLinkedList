@@ -74,7 +74,17 @@ namespace DoublyLinkedList
         }
         public bool delNode(int rollNo)
         {
-
+            Node previous, current;
+            previous = current = null;
+            if (Search(rollNo, ref previous, ref current) == false)
+                return false;
+            if (current == START)
+            {
+                START = START.next;
+                if (START != null)
+                    START.prev = null;
+                return true;
+            }
         }
     }
     class Program
