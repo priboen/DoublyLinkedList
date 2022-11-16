@@ -90,6 +90,9 @@ namespace DoublyLinkedList
                 previous.next = null;
                 return true;
             }
+            previous.next = current.next;
+            current.next.prev = previous;
+            return true;
         }
     }
     class Program
