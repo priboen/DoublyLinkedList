@@ -72,6 +72,10 @@ namespace DoublyLinkedList
             for (previous = current = START; current != null && rollNo != current.rollNumber; previous = current, current = current.next) { }
             return (current != null);
         }
+        public bool delNode(int rollNo)
+        {
+
+        }
     }
     class Program
     {
