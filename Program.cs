@@ -85,6 +85,11 @@ namespace DoublyLinkedList
                     START.prev = null;
                 return true;
             }
+            if (current.next == null)
+            {
+                previous.next = null;
+                return true;
+            }
         }
     }
     class Program
